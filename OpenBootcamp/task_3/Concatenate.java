@@ -1,11 +1,19 @@
-public class    Concatenate
-{
+// ConcatenatedStringBuilder is a way to create a concatenated string builder.
+// This can be used to build the output string from multiple strings separated by commas.
+
+public class Concatenate {
+
     public static void main(String[] args) {
 
-        String[] concatenated = new String[] {"a", "b", "c"};
+        String[] nombres = new String[]{"Pepito", "Fulanito", "Menganito"};
 
-        for(int i = 0; i < concatenated.length; i++) {
-            System.out.print(concatenated[i]);
+        StringBuilder line = null;
+        line = new StringBuilder();
+        for (String nombre : nombres) {
+            line.append(nombre);
+            line.append(" ");
+
         }
+        System.out.println(line.toString());
     }
 }
